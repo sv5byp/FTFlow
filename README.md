@@ -1,30 +1,21 @@
 # FTflow - SV5BYP Edition
 
-**Portable Windows software for weak-signal digital communication on the amateur radio bands.**
+Portable Windows x64 software for weak-signal digital communication on amateur radio bands, based on MSHV.
 
-FTflow is based on **MSHV**, developed by Hrisimir Hristov, LZ2HV. It combines the inherited digital-mode operation with station maps, 2D/3D waterfall views and the SV5BYP Edition features.
-
-## Download and run - no setup required
+## Download and run
 
 1. Open [the latest release](https://github.com/sv5byp/FTFlow/releases/latest).
-2. Download **FTflow-SV5BYP-r140-Windows-x64-portable.zip** under **Assets**.
-3. Extract the **complete ZIP** into a folder on your hard disk.
-4. Open that folder and run **FTflow.exe**.
+2. Download the **Windows x64 portable ZIP** under **Assets**.
+3. Extract the complete ZIP into a folder on your hard disk and run **FTflow.exe**.
 
-**There is no setup program or installer.** Keep all included files and folders together; do not run the program from inside the ZIP.
+**No setup or installer is required.** Keep all included files and folders together. Do not run from inside the ZIP. You can also extract the package to a USB stick and run it from there. Configure the audio devices and radio connection for the computer you use.
 
-You can also extract the complete package to a **USB stick** and run **FTflow.exe** directly from it. Settings and logs stay with the program folder. Configure the audio devices and radio connection for the computer you use.
+## Updates and existing installations
 
-## Adjustable waterfall
+Use **Help > Check for updates**, or keep **Check at startup** enabled. Signed program-file updates preserve settings and logs and wait for the application to be idle before installing.
 
-Drag the thin horizontal grip below the waterfall controls to change its height in either 2D or 3D. It can now be reduced below the previous minimum, down to 80 pixels. The chosen height is saved for the next start. Double-click the grip to restore the original size. No extra height option is added to the menu.
-
-## Updates
-
-Use **Help > Check for updates** or keep **Check at startup** enabled. A new version is offered with confirmation and download cancellation. Installation waits for an idle radio state with PTT off and empty Now/Queue lists, then restarts the program. Signed program-file updates preserve settings and the logbook. Keep **FTFlow-Update.exe** beside the main executable.
-
-For a manual upgrade, close FTflow and copy only the new **FTflow.exe** and **FTFlow-Update.exe** into the existing permanent folder. Keep your settings and log folders, and retain a backup of the old installation.
+For a manual upgrade, close FTflow and copy **FTflow.exe** and **FTFlow-Update.exe** into the existing permanent folder, keeping settings and log folders. Retain a backup of the old installation.
 
 ## Credits and source
 
-FTflow is based on MSHV. Original author and contributor credits remain in **Help > About FTflow**. The application source ZIP and GNU GPL license are provided with each release. Map data attribution is included in the portable package. The source package is for developers; ordinary users should download the **Windows x64 portable ZIP**.
+FTflow is based on MSHV, developed by Hrisimir Hristov, LZ2HV. Original contributor credits, map attribution and GNU GPL license are retained. The application source ZIP accompanies the release; ordinary users should download the portable ZIP.
