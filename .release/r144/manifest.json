@@ -1,0 +1,720 @@
+{
+  "repository": "sv5byp/FTFlow",
+  "tag": "r144",
+  "title": "FTflow r144 - Portable Windows x64",
+  "body": "FTflow r144 is portable Windows x64 software for weak-signal digital communication on amateur radio bands, based on MSHV.\n\nDownload **FTflow-SV5BYP-r144-Windows-x64-portable.zip**, extract the complete ZIP into a folder on your hard disk and run **FTFlow.exe**. **No setup or installer is required.** It can also run from a USB stick. Keep all included files and subfolders together.\n\nFor an existing installation, use **Help > Check for updates**. For a manual upgrade, close FTflow, retain a backup and copy **FTFlow.exe** and **FTFlow-Update.exe** into the existing permanent folder. Keep your settings and logs.\n\nThe source ZIP is for developers. FTFlow-update.bin and FTFlow-update.sig are used by the built-in updater. Ordinary users should download the Windows x64 portable ZIP.\n\nBased on MSHV, developed by Hrisimir Hristov, LZ2HV. Original contributor credits, map attribution and the GNU GPL license are retained.\n",
+  "assets": [
+    {
+      "name": "FTflow-SV5BYP-r144-source.zip",
+      "sha256": "4a465a4b8fb6d60e89f3448abe3081ac62504ea41f7c1fe5d0f041b3a8e5fdee",
+      "size": 31722176,
+      "transport": "raw",
+      "chunks": [
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part000",
+          "sha256": "10beb4f58b03bd8c62e405b4116fe8fd6e91d3b7a5ea9d0b2e24c45df7c3ef9c",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part001",
+          "sha256": "1aae77a31e59f0742d237de15987d2b8c11590c965091a001d1514d4470deed0",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part002",
+          "sha256": "f9bff6fb892e17d8b4179c5e3293575b4e7344805a7b96ac8e96d540656ddc04",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part003",
+          "sha256": "5f59f43c2fd3d49ae79afb4113aee284cb6f2dad886a47ced272f41efb38154a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part004",
+          "sha256": "df397a479f39a48402e10af099b6e200901eb76c3eb9894b352b15b32b4f62b7",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part005",
+          "sha256": "3577bc8b080591bde568322fc0fc77fa0c72e5ad6a94313271243d03c6852961",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part006",
+          "sha256": "d1fba3aff2f6c02dbc2fd349d3a22db9d36218bf7b6e4cf68fc08e7b18429694",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part007",
+          "sha256": "bcb5b5a0d4282fb791a07599d4a3cb8a838c3920504d0111c46ee4d8319f84bf",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part008",
+          "sha256": "219d0edede3c42d2ef67e89f6b7cb7c8b61eba28c6bb356b183d0fd9d09df3d3",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part009",
+          "sha256": "1e58bc8d6677d1ead6273611dd8ad41d043c5f0a52135eab72d20a32ba6d8095",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part010",
+          "sha256": "715239b2bdebafe3101cf8987c6cbf30c4994be782a77475a7bb3c4e7bba816a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part011",
+          "sha256": "50c53a25361bffd034cf762e93123d846e0d2f30f8d03a01a808210a5bf7662e",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part012",
+          "sha256": "df89162dfc00f9d82e8360c0c501017e9e8f08bcdb39ffc3e57d4bbdc06b4cf3",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part013",
+          "sha256": "18134114c67797645e6cf1b64b6c1b8bbc62f630fab5c50bfa8785ee0a7b2033",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part014",
+          "sha256": "bd9c88ffc3bef9a805534949a3352ce8a01bfacf22ba2780c1950481dc1d6a77",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part015",
+          "sha256": "19565c1a54ddb3981b3537586143439bf65954bdaef9326e458338e51859f153",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part016",
+          "sha256": "14e2c0c961e67375e2e034a02e41b653c8b0fef5fcd2c4a95c0ab94716411cce",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part017",
+          "sha256": "bca1efe714f5dd393aa89cea4473d51cd527f538c0eef399f5153dca45480fff",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part018",
+          "sha256": "78920e76d1d5724d9338ee968a06216063903bce13a0bf469322e6b7539bc6d8",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part019",
+          "sha256": "644ed31968f21f0f92165e9a3b2a9e1da381e5d619a69dbe02770c0e793d7e20",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part020",
+          "sha256": "94c8c3f590cb053a1e9e4b7296f45840813faf0a0fba5fa7bc5f04e622907ae8",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part021",
+          "sha256": "aaec9a3807bf3534ac639b27dd6f4891de68217bec2330d9b58d1fd93b04b72c",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part022",
+          "sha256": "b652313f25a0d0e15ceae07f62c124924f9b19e3e4f69a65c571e85abd455993",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part023",
+          "sha256": "a72ccea36f9b7dd2adda83a0474bcb040f2ab0f5526b02a44dc000edd3ad43ef",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part024",
+          "sha256": "cc361198f35a3bf887e2565575d5bb43b8d862de49c543534f3a50819c85bd33",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part025",
+          "sha256": "c31f633e17ce563ba7e200882a1dc888baa720383e0b6ead016873a3f5dbeb36",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part026",
+          "sha256": "e88fc4f7285ae4fac4d3c0650700116beb9122a6527dffebc2bebf4dbf2275ad",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part027",
+          "sha256": "0e96ab4c29b8f225c5952054365805e087e24b2923a2542ccbdcdc8c7ed5db40",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part028",
+          "sha256": "25c196700efb00bb36ac3862bc854cefc77bef5dde94a963dd18b8ae49f4f4ea",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part029",
+          "sha256": "1adea999a606540e2d46a2d71b20afce07dcc5c727ce573672847f1f148a42d1",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part030",
+          "sha256": "ca3a8ba43c0a8819c93a2f4703d3083f362cd91b043ae77194e46d39361e78c7",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part031",
+          "sha256": "d080d41ab0d8b0fa563b2b816a8bfc3f6583c9d25bf50622ca5fddba797d6614",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part032",
+          "sha256": "38246ba8f48dd1c155a236308bec81d91b714cd962026b3ceb606b34b178aed8",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part033",
+          "sha256": "d75a95de64dd7ddfa9720b08009b27606b47e9db5a8a3a456965172d249c08fc",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part034",
+          "sha256": "635e7ae80be866781f78b3336f94d5d4a20a573f5d35a6e8ce7e27eee50ba1d6",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part035",
+          "sha256": "2df69ea2bdf8116cc06ee7846cc8111751e34373f08b1544bbfe0f8a214d5d37",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part036",
+          "sha256": "3183872b3c82890c5b27b4c79ef6c7a3e6cc42fdf8434d77fd9d0e16fcab36d7",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part037",
+          "sha256": "45c79fe795c8f3ddc65d5f5f804ce278a4bc2c4cc1f096646f102bba7ff48739",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part038",
+          "sha256": "0f611d77f743a0d4b55bb3a9bcc2bae49c6827e2ede75ebb9c0ea0e094a74331",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part039",
+          "sha256": "41a0f7eb2f534e013d6d7af09fe610b84ee57acc954dcf577d4e39dc26cafe7d",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part040",
+          "sha256": "7a26b23c7fe3c0f3efa20d0d5a05e0737d6e9fa17f7988556962e86b74a031c7",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-source.zip.part041",
+          "sha256": "eb4cd4cce94b99f8e509c478346dc83953540ff05c1466c49a645493297a2cdc",
+          "size": 234176
+        }
+      ]
+    },
+    {
+      "name": "FTflow-SV5BYP-r144-Windows-x64-portable.zip",
+      "sha256": "3def93db6a1f8b55f09951cf55dc349ad64682029304909b51083fe21baa2368",
+      "size": 43652419,
+      "transport": "raw",
+      "chunks": [
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part000",
+          "sha256": "2d8a85c9cd73a2b06f6a335cf143d4464067cef4c1ba3f5e8aada207bc9559d9",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part001",
+          "sha256": "4518ffe50cf243d6305d5c74cc8cc7cd965c84d4d34a973893240e248090fa6a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part002",
+          "sha256": "1d7bcf611a0f6dd1d254aaa494c2467986397a7a013e89676a4b991809e63065",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part003",
+          "sha256": "d03b527916fa27bfa37d24ddccbfd5367f635a0effcdfbee9d24abab35434cb4",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part004",
+          "sha256": "d4298ba5238d2df28a7c69b1269b1865769d55005138b6aa8460c9a74dcb699a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part005",
+          "sha256": "5f1ab89aeb50c296b4243fcc56ee422761e74f1f2f846b3c81fb74adba0fcbf6",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part006",
+          "sha256": "6c614c6895fb14231865ba80cc433d6d11450f19597157c0fc526dcc41627f16",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part007",
+          "sha256": "a45dc553d953295b283424dacb8415868241b3fb6692b3df33b8b008f2fbec3f",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part008",
+          "sha256": "8af8c6c78fbbe16067d44120713d5841a88ccd5211eaa0c25c087147a9beb64a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part009",
+          "sha256": "5237cee62ce8f275b12eb17f35f611320daf571edb8bb812da25cbd9972b455a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part010",
+          "sha256": "5457cc4d47a556e2ac770cb26ff748fd495e71e0392a656c72a4fd721a599388",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part011",
+          "sha256": "734211ab53d3d85685a69faf31a99c3dc6585dbc340e96772d2edd7716d9803b",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part012",
+          "sha256": "be6eab8a21f5b35ceacd55f2f0f81025132e410a86a240e19dd98fbce6d0887b",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part013",
+          "sha256": "68370c6b5627ef8bd668baf3bf9170f74e5a8a755f25a54efecbf8331a0901d1",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part014",
+          "sha256": "3cb34e4e816f2d390b34922cf26748cf3aafd5e6f280b985e5c61239143fb6b5",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part015",
+          "sha256": "b92bcdb5c80ea0da1d63ca5de9cf2c78c2d6820854a86a357ade7055401f93fb",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part016",
+          "sha256": "2f6fe2d1173f891f282b0a51858a6298561ba0ff29e63a4985956e7b87fff221",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part017",
+          "sha256": "b713dd11db91c961069fa5dd5ec1d39c80851827773e4aaf2a82e74a7d76698c",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part018",
+          "sha256": "5a45ff239a4a674d452dd0ea3bcfb865018c9fb66bf7d429d2ed8e4bb1ec0af0",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part019",
+          "sha256": "22d9382a01e8c714ecea00b8f625403e5f34eb677afcd8766577535af8e64a1a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part020",
+          "sha256": "5f59f1ae585444a618f85dc5389871cc922070d84d3392adfbe1fcc2d412abf7",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part021",
+          "sha256": "4d59ebc15862deb886ddb1bf0682c39d54cc44b888aa786236e93f93384696b2",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part022",
+          "sha256": "1c02bec8dc74d4727e95ebc34808e87b8e971a17eb2b2b98beaf03e440ff781a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part023",
+          "sha256": "1200ee33ced44b1a323a84acc3e63e2de2b6bcfec4054a4a0d01fe4d769cd8a5",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part024",
+          "sha256": "12601811c7dac476fd3c78b64e9c9d2c9ed880ddebcb490caead6744774c460e",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part025",
+          "sha256": "49534078866d7da337ddaaa2806376b21b7a8608000e3a338e0316f11449f980",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part026",
+          "sha256": "55e87f0651703795a7473fbb8a3c56f09f766a856f8f1445249091cb8137f440",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part027",
+          "sha256": "78928296b0da256d9bfd528ee9d01ceccaeb19dfae8092fae944ab465f20c5cd",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part028",
+          "sha256": "0be5a68b6991080939cdf6dde2495714de57ab8404bd69d484adc89ee3f93095",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part029",
+          "sha256": "3b3281e66bdc20889c8d7501bab7f2506871bb3baf332eb54b8ffbe2ae4d6ae9",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part030",
+          "sha256": "689e1d4e38d5d3c360e81641e729426ae3923d8a58adf3ce46ef811ecab5c011",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part031",
+          "sha256": "fc56dc250b8a19729efdb75c1688de2f14a609cf7db45894a3c1b354b25c836e",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part032",
+          "sha256": "59c70f34c87f7069aeb45c5f513db32e6a3246101abbe9625a7d044b731a38f9",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part033",
+          "sha256": "41f17a33e9c8be48d5670e0655ec6979206c84e4d289af52c7e680b9720c7f2d",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part034",
+          "sha256": "b4c0a5bdf5075cd03220060db13194d765a70e3b4023097e25acfe614a75795f",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part035",
+          "sha256": "d195b65c213ee9b6e61ecf416cd0018d462172335f2965a3d24497861711e55a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part036",
+          "sha256": "adfe429c87ca83483e62756e4174e80767eadf9b3a514436a9f065950e9a6555",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part037",
+          "sha256": "f5b6e488e2d21d428649428b813d0020b64d6094197928aa6ca313f06b1e2486",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part038",
+          "sha256": "71539e576e0eebd49f6e938c476b36903001f2fab2a8cc70993cf9525f404677",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part039",
+          "sha256": "75aa8bd2262c6e3c6b986d370bf727eface804dc57f368e1a07a4404e5a2e404",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part040",
+          "sha256": "bc66b1b3ad9002a8acbf0f4cbd574d63d99952cd4672ef4c903c55aa7c42a2b1",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part041",
+          "sha256": "80678387432a47fe5636a67e664b8585fe7d9ce6417f98628b56d3de37c27538",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part042",
+          "sha256": "65e091f7f74f1061a959e441a2b3794bf786775291217deea6661581ebfade37",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part043",
+          "sha256": "ac8296889ca5596c507fa46d23a252a532d95f97b3e4ef13bc90fb787d160211",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part044",
+          "sha256": "239669c42ee56eac40826b29a90f6a7c652d15426a95ffe60975ae923c1987d1",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part045",
+          "sha256": "7e33758aaccca6911f571ba63624bde4bc338b19bed86593d84bc1647195fbc0",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part046",
+          "sha256": "5fbdadf2250d0be95c9c3661548102fa9730327503a0fee2c34408f2ae996947",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part047",
+          "sha256": "aa11c71d9e85c37def92d0b4d5a698840bf74d00f5992205521390c7e8a658de",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part048",
+          "sha256": "93bb871330df5abeaab63bc98b4817a9c91f34c76dfc086954573123d4efe556",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part049",
+          "sha256": "5aa313505d579689fbf5152d0a8a9aa1f9e0bffeb785c245f78baca0fa288ec3",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part050",
+          "sha256": "1e27c7dfe858fdd86647971f744976314eecdfcf4c2b69d0ed48e805be47778b",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part051",
+          "sha256": "bb13e39b55c0e6329b99c9f590b6161528fa90a9d04c404e88840d2b88b03bb2",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part052",
+          "sha256": "db02e97b978a81a5a6bd6f4294e621bc27f0e56c2e949fde0633e9ec66ca2a82",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part053",
+          "sha256": "c7c4f5b8b53b1ff6a32f2472212e18208af8418bb02bc17dbf6a720c6394b2ad",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part054",
+          "sha256": "310862ff4b0ea53ecf614f0362de969476d4652963bcd921e84ef2ad6825dfd0",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part055",
+          "sha256": "06af634de2cf5328e4b5c3de0f1243b2f9fa0c2c12c6ea160d4b818312c79bbc",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTflow-SV5BYP-r144-Windows-x64-portable.zip.part056",
+          "sha256": "7d2e7c3f44c8aecb11e646833a693446d8f52a6cbcc443e66ab4f3f4f438b6a1",
+          "size": 644419
+        }
+      ]
+    },
+    {
+      "name": "FTFlow-update.bin",
+      "sha256": "64fa2566b646d22f5aaadc6c20827095fa1e84f7713d2ed5eb3d04a0d0bbce6b",
+      "size": 31618635,
+      "transport": "zlib",
+      "chunks": [
+        {
+          "path": "chunks/FTFlow-update.bin.part000",
+          "sha256": "40198f9d6610fc909680925483b2f2efd8490b44392b13555056252a6181018a",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part001",
+          "sha256": "4dfeaf4167d4a58e8889fa4d2fa79f3b1b82398346c157979dc3bd2942888a45",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part002",
+          "sha256": "b41f54b5ed6f19fe9490a46b3794f9751b7149901044b93408b59c6c37c23db8",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part003",
+          "sha256": "d643a291f8cb4ba8528c4ecb42a56d43f6b826380441bca250833b5d343debf2",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part004",
+          "sha256": "6fe0f482f3aed348954688e2f624cfe0d66aa78aeeda9716a46c1aff4ea4b90d",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part005",
+          "sha256": "42973b16e09b44ff2ee9a94c42e2a77f4abe48458066a1f4ac9a2f6221dc68db",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part006",
+          "sha256": "7b09fe3c7455af17b536bbae55f7394bc0796c929ca8ccd9bd5b6bb4272bc390",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part007",
+          "sha256": "a3fad421badce0fdfc9547e9fb2d707c0bcf1683b7e61c133d94b034dddf03ac",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part008",
+          "sha256": "7821dea29501cbc7ba118d01181afe4cd2032b26e52b5d71e096533734c65424",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part009",
+          "sha256": "3e621b4e05f97abd3447f48d85e9f0b92882fb9e4cfa7a8b119bfd9b699a033e",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part010",
+          "sha256": "37699e39e94a7f4147a95f72bb43c19e69850be5da7f25d03fb40e2bc4ef7dd8",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part011",
+          "sha256": "868e4421e328bc7401db1f0a23482f70d207434ef98ba121380473ff3e02ce89",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part012",
+          "sha256": "949bc82f5222344cfe530afa1663e56109ddd5babc42b2c4959ac39a92685684",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part013",
+          "sha256": "298bf9deb47e414d4fdbc5bfcd919e107cae24370549232cff622a8fd44ae503",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part014",
+          "sha256": "83acd45ddc93b59fe92abfdde155428a440e3540f87ff17d221fde03e6b6c399",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part015",
+          "sha256": "aac54ac15ee350d09f6cf4c7600638d2109eeb8825db851f0b11e02e5e5ce456",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part016",
+          "sha256": "7633abf72219fb221f8b37c10e6ff61b2e583248fea9dbfde3e9d6863caf7223",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part017",
+          "sha256": "8bbb7399792ef5b110dd706a3fdcc22860600c2a162147bd2e2d8847beea5db0",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part018",
+          "sha256": "118fe330ad0415f21d32abd5c55f0dbd7254d00ee04fd82f86b5272acf1be1f1",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part019",
+          "sha256": "2d0757b75cd8403677f3acce033c89123f4c15fe3f6ee39b692c61d94db7bb87",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part020",
+          "sha256": "953458646933cc662d6862c2c562235c7007517d34533e9ffe2faa7e75c503cf",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part021",
+          "sha256": "a15adab4a3b49aacc046fe1c240720b77021e767113170f2700ebc45f0729665",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part022",
+          "sha256": "85acd711e59d3f1c6a067fff113bbc031361b80c989b5d4aa3cfb350493ef390",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part023",
+          "sha256": "d02c332b1dca40a6ac1c48aae5eb12506781af870d8c949e96eca2f3536f4b27",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part024",
+          "sha256": "4e92e0db405b4fe3ba89f49f402d13301411428192fedb562a966c895519fe14",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part025",
+          "sha256": "02be3654fc8089d922e1e43aea3b5cce66e4cf2212919df7126edf143724a533",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part026",
+          "sha256": "e2e5978325516b092f590efa5f85db54826cc1889db2b83c4ecca6be3dc858fd",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part027",
+          "sha256": "97d2aaef770559faed4484b775604134f271d251e691c828b83ec21397c86454",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part028",
+          "sha256": "6f3c8548ca24303e292d48987f8038ea68bcce0713708cf0513bb8a3ee01877e",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part029",
+          "sha256": "e8202520878101450f70321cd2be8e8d18af94a64f5c5b2f171890baae735f49",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part030",
+          "sha256": "28f445d63e7cea54257518d455138d2b145131455379a297ff54b8183cd10f9b",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part031",
+          "sha256": "fa057bfdcc49b83250e057a8921fcda854fe18684f81eebf5350b9fd396a5893",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part032",
+          "sha256": "e4da2abdea963de975a78457ebe77a875ab8e82a81b81e03785be782a773632c",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part033",
+          "sha256": "6fccbf7b0ce946a5eeaa29851e0752b134712d71b4c4098159e0584a68e7cb3e",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part034",
+          "sha256": "4ba8433b93bae7a69cf7d9da9726cff9b1580479345d285fb5be2cfc004d24bf",
+          "size": 768000
+        },
+        {
+          "path": "chunks/FTFlow-update.bin.part035",
+          "sha256": "fc41559f8b0972feef2eeeb90797826ed191c4552ee09d092ae33b16d27046e2",
+          "size": 376662
+        }
+      ]
+    },
+    {
+      "name": "FTFlow-update.sig",
+      "sha256": "d3e45d3f2758d8639afe6eff39400b09d4d3e16c10717d9f55ee57b816068ef3",
+      "size": 384,
+      "transport": "raw",
+      "chunks": [
+        {
+          "path": "chunks/FTFlow-update.sig.part000",
+          "sha256": "d3e45d3f2758d8639afe6eff39400b09d4d3e16c10717d9f55ee57b816068ef3",
+          "size": 384
+        }
+      ]
+    }
+  ]
+}
