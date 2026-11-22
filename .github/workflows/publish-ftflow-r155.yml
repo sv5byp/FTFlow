@@ -1,0 +1,86 @@
+name: Publish reviewed FTflow r155
+on:
+  push:
+    branches: [main]
+    paths: ['.release/r155/manifest.json']
+permissions:
+  contents: write
+concurrency:
+  group: ftflow-release-r155
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'sv5byp/FTFlow'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Verify reviewed files and publish FTflow r155
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 <<'PY'
+          import hashlib, json, os, urllib.request, urllib.error, urllib.parse, zlib
+          from concurrent.futures import ThreadPoolExecutor
+          repo = 'sv5byp/FTFlow'
+          tag = 'r155'
+          expected = [{'name': 'FTflow-SV5BYP-r155-source.zip', 'sha256': 'baa6c5415f45f05dbc08a39a9890b67c928d5b23b19ac6640160b2f050d3035d', 'size': 31963464}, {'name': 'FTflow-SV5BYP-r155-Windows-x64-portable.zip', 'sha256': '2b4ebe66c31e8487c3784e9406ce1264708336e53d78f76f2eeeee08ba6d1de9', 'size': 44041311}, {'name': 'FTFlow-update.bin', 'sha256': 'c6f44a8d91f8f5324648953448dd9c3cdb52f13a0e7114d13e66c4f24c050361', 'size': 31943755}, {'name': 'FTFlow-update.sig', 'sha256': '0e8a9198e914b647d3dd06a9fae597c951149b973a032092b6995ed932cf0103', 'size': 384}]
+          assert os.environ['GITHUB_REPOSITORY'] == repo
+          commit = os.environ['GITHUB_SHA']
+          assert len(commit) == 40 and all(c in '0123456789abcdef' for c in commit)
+          base = 'https://raw.githubusercontent.com/' + repo + '/' + commit + '/.release/r155/'
+          def digest(data): return hashlib.sha256(data).hexdigest()
+          def download(path, limit):
+              request = urllib.request.Request(base + urllib.parse.quote(path), headers={'User-Agent':'FTflow-Release-r155'})
+              with urllib.request.urlopen(request, timeout=45) as response: data = response.read(limit + 1)
+              assert len(data) <= limit
+              return data
+          data = download('manifest.json', 100000)
+          assert digest(data) == 'd540c37cebcc0f1b45ff844dbae038a68afec592d5bf20bdc5819ed36686603d'
+          manifest = json.loads(data)
+          assert manifest['repository'] == repo and manifest['tag'] == tag
+          assert [{k:a[k] for k in ('name','sha256','size')} for a in manifest['assets']] == expected
+          def read_part(part):
+              assert part['path'].startswith('chunks/') and '..' not in part['path']
+              data = download(part['path'], part['size'])
+              assert len(data) == part['size'] and digest(data) == part['sha256']
+              return data
+          files = {}
+          with ThreadPoolExecutor(max_workers=8) as executor:
+              for asset in manifest['assets']:
+                  data = b''.join(executor.map(read_part, asset['chunks']))
+                  if asset['transport'] == 'zlib':
+                      decoder = zlib.decompressobj()
+                      data = decoder.decompress(data, asset['size'] + 1)
+                      assert decoder.eof and not decoder.unused_data
+                  else: assert asset['transport'] == 'raw'
+                  assert len(data) == asset['size'] and digest(data) == asset['sha256']
+                  files[asset['name']] = data
+          print('Verified all four reviewed release assets.')
+          def api(method, path, payload=None, raw=False):
+              url = path if path.startswith('https://uploads.github.com/') else 'https://api.github.com/repos/' + repo + path
+              data = payload if raw else None if payload is None else json.dumps(payload).encode()
+              request = urllib.request.Request(url, data=data, method=method, headers={
+                  'Authorization':'Bearer ' + os.environ['GH_TOKEN'], 'Accept':'application/vnd.github+json',
+                  'User-Agent':'FTflow-Release-r155', 'X-GitHub-Api-Version':'2022-11-28',
+                  'Content-Type':'application/octet-stream' if raw else 'application/json'})
+              with urllib.request.urlopen(request, timeout=180) as response: return json.load(response)
+          try: release = api('GET','/releases/tags/' + tag)
+          except urllib.error.HTTPError as error:
+              if error.code != 404: raise
+              release = api('POST','/releases',{'tag_name':tag,'target_commitish':commit,
+                  'name':manifest['title'],'body':manifest['body'],'draft':True,'prerelease':False})
+          assert release['tag_name'] == tag and not release['prerelease']
+          existing = {a['name']:a for a in release['assets']}
+          assert set(existing).issubset(files), 'Unexpected release assets; refusing to modify them'
+          for asset in expected:
+              if asset['name'] not in existing:
+                  assert release['draft'], 'Refusing to alter a published partial release'
+                  url = 'https://uploads.github.com/repos/' + repo + '/releases/' + str(release['id']) + '/assets?name=' + urllib.parse.quote(asset['name'])
+                  existing[asset['name']] = api('POST',url,files[asset['name']],raw=True)
+              uploaded = existing[asset['name']]
+              assert uploaded['size'] == asset['size'] and uploaded['digest'] == 'sha256:' + asset['sha256']
+          if release['draft']:
+              release = api('PATCH','/releases/' + str(release['id']),{'draft':False,'prerelease':False,'make_latest':'true'})
+          assert not release['draft'] and not release['prerelease']
+          print('Published ' + release['html_url'])
+          PY
