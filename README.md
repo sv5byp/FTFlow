@@ -1,27 +1,23 @@
 # FTflow — SV5BYP Edition
 
-FTflow r171 is the full-package continuation of FTFlow: portable Windows x64 amateur-radio digital-mode software based on MSHV, with the existing weak-signal modes plus RTTY Bot and CW Bot.
+Portable Windows x64 amateur-radio software based on MSHV, with the existing weak-signal modes, RTTY Bot and CW Bot.
 
-## Download and run
+## Update existing FTFlow
 
-1. Open [FTflow r171](https://github.com/sv5byp/FTFlow/releases/tag/r171).
-2. Under **Assets**, download **FTflow-SV5BYP-r171-Windows-x64-portable.zip**.
-3. Extract the **complete ZIP** into a new folder on disk or USB and run **FTFlow.exe**.
+Use **Help > Check for updates** in older FTFlow releases that support signed automatic updates, then accept the update and allow the program to restart. r172 delivers the **complete runtime**, including the CW model, automation engine and clock helper. Settings, contacts and logs are retained. Automatic checks respect the saved startup-check preference.
 
-No setup or installer is required. Keep every included file/subfolder together. Configure your callsign, soundcards and radio/PTT connection for the computer you use.
+## Download
 
-## Existing users
+[FTflow r172 — complete portable package and source](https://github.com/sv5byp/FTFlow/releases/tag/r172)
 
-Migration to r171 requires the **full ZIP**; the older two-program-file updater cannot deliver the new clock helper, CW model and automation runtime. Close the old instance and retain a backup of settings and ADIF logs. **Do not replace only an EXE.** Legacy releases and their updater channel remain available; this full-package release is downloaded manually.
+For a new installation, extract **FTflow-SV5BYP-r172-Windows-x64-portable.zip** into a new folder and run **FTFlow.exe**. Keep the complete folder together. r171 and older versions without the updater menu require this full download once. Configure radio/audio devices for your computer; never copy only an EXE for a manual installation.
 
-## RTTY and CW
+## Clock synchronization
 
-Editable F1-F12 macros, DSP, automatic/manual CW speed, adjustable receive AFC, optional multichannel receive text and selected-station automatic QSO. Unknown callsigns are shown as unknown. A callsign click selects one station without transmitting. Optional Slots/RTTY Bot/CW Bot access levels remain as provided by the application.
+Defaults **OFF** for new profiles; the user's ON/OFF choice is saved. Enable it explicitly in Features > Clock synchronization. First activation may request Windows permission. Windows 10/11 with Windows PowerShell 5.1 is required for this optional feature.
 
-## Optional clock synchronization
+## Features and credits
 
-Automatic synchronization defaults **OFF** in a new profile. The user enables it from **Features > Clock synchronization > Automatic every10minutes**, and the choice is saved. The complete package includes the updated **FTFlow-Time.exe**. First activation may ask once for Windows permission. The optional feature requires Windows10/11 with built-in Windows PowerShell5.1 and displays before/after measurements, sources and verification status.
+F1–F12 editable messages, RTTY/CW automation, CW DSP and automatic/manual WPM, adjustable AFC, optional parallel multichannel reception and station selection without transmission. Access levels remain as supplied by the application. See release notes for validation scope and recovery information.
 
-## Credits and source
-
-Based on MSHV by Hrisimir Hristov, LZ2HV. Original credits, map attribution and GNU GPL license are retained. DeepCW by VE3NEA is MIT-licensed; its license/attribution are included. Source accompanies each release. See the release notes for validation scope and operating requirements.
+MSHV by Hrisimir Hristov, LZ2HV (GNU GPL); DeepCW by VE3NEA (MIT). Original credits, licenses and map attribution are retained. No proprietary CW Skimmer decoder is included. Corresponding source and SHA256 checksums accompany the release. Older releases remain available as history.
