@@ -1,0 +1,76 @@
+name: Publish reviewed FTflow r171 full package
+on:
+  push:
+    branches: [main]
+    paths: ['.release/r171/manifest.json']
+permissions:
+  contents: write
+concurrency:
+  group: ftflow-release-r171
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'sv5byp/FTFlow'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Verify reviewed full package and publish r171
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 <<'PY'
+          import hashlib,json,os,time,urllib.request,urllib.error,urllib.parse
+          from concurrent.futures import ThreadPoolExecutor
+          repo='sv5byp/FTFlow';tag='r171';expected=[{'name': 'FTflow-SV5BYP-r171-Windows-x64-portable.zip', 'sha256': '85a893f8547c9a9c73c5123d2ddbab43efd5f82d6002f0d23a85b3404c80a13a', 'size': 50988107}, {'name': 'FTflow-SV5BYP-r171-source.zip', 'sha256': '92619561adcabce3793adf9130ba965a1bdc6bce2df9cce2109b4c4330b72d4c', 'size': 35675628}, {'name': 'SHA256SUMS.txt', 'sha256': '60af0a9261857c2c0aa31521fdd396f1baffdc7b6af2bf8f7f39471aeadc5f7a', 'size': 208}]
+          assert os.environ['GITHUB_REPOSITORY']==repo
+          commit=os.environ['GITHUB_SHA'];assert len(commit)==40 and all(c in '0123456789abcdef' for c in commit)
+          base='https://raw.githubusercontent.com/'+repo+'/'+commit+'/.release/r171/'
+          digest=lambda data:hashlib.sha256(data).hexdigest()
+          def download(path,limit):
+              for attempt in range(5):
+                  try:
+                      req=urllib.request.Request(base+urllib.parse.quote(path),headers={'User-Agent':'FTflow-r171-publication'})
+                      with urllib.request.urlopen(req,timeout=45) as response:data=response.read(limit+1)
+                      assert len(data)<=limit
+                      return data
+                  except urllib.error.HTTPError as e:
+                      if e.code not in (404,429,500,502,503,504) or attempt==4:raise
+                      time.sleep(2**attempt)
+          data=download('manifest.json',100000);assert digest(data)=='397a97f4a4bd3284d5a4ddf00b0d34e171c9bed88f79ad68a8c4cdd06a7fbbd9';m=json.loads(data)
+          assert m['repository']==repo and m['tag']==tag
+          assert [{k:a[k] for k in ('name','sha256','size')} for a in m['assets']]==expected
+          def part(p):
+              assert p['path'].startswith('chunks/') and '..' not in p['path']
+              data=download(p['path'],p['size']);assert len(data)==p['size'] and digest(data)==p['sha256'];return data
+          files={}
+          with ThreadPoolExecutor(max_workers=8) as pool:
+              for a in m['assets']:
+                  raw=b''.join(pool.map(part,a['chunks']));assert len(raw)==a['size'] and digest(raw)==a['sha256'];files[a['name']]=raw
+          print('Verified every byte of all reviewed public assets.')
+          def api(method,path,payload=None,raw=False):
+              url=path if path.startswith('https://uploads.github.com/') else 'https://api.github.com/repos/'+repo+path
+              body=payload if raw else None if payload is None else json.dumps(payload).encode()
+              headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','User-Agent':'FTflow-r171-publication','X-GitHub-Api-Version':'2022-11-28'}
+              headers['Content-Type']='application/octet-stream' if raw else 'application/json'
+              with urllib.request.urlopen(urllib.request.Request(url,data=body,method=method,headers=headers),timeout=90) as response:return json.load(response)
+          try:release=api('GET','/releases/tags/'+tag)
+          except urllib.error.HTTPError as e:
+              if e.code!=404:raise
+              release=api('POST','/releases',{'tag_name':tag,'target_commitish':commit,'name':m['title'],'body':m['body'],'draft':True,'prerelease':False,'make_latest':'false'})
+          assert release['tag_name']==tag and not release['prerelease']
+          existing={a['name']:a for a in release['assets']};assert set(existing).issubset(files)
+          for a in expected:
+              if a['name'] not in existing:
+                  assert release['draft'],'Refusing to alter an already-published partial release'
+                  url='https://uploads.github.com/repos/'+repo+'/releases/'+str(release['id'])+'/assets?name='+urllib.parse.quote(a['name'])
+                  existing[a['name']]=api('POST',url,files[a['name']],True)
+              remote=existing[a['name']]
+              for attempt in range(10):
+                  if remote.get('digest')=='sha256:'+a['sha256']:break
+                  time.sleep(1);remote=api('GET','/releases/assets/'+str(remote['id']))
+              assert remote['size']==a['size'] and remote['digest']=='sha256:'+a['sha256']
+          # Retain the legacy updater API channel; r171 migration is full-ZIP only.
+          if release['draft']:release=api('PATCH','/releases/'+str(release['id']),{'draft':False,'prerelease':False,'make_latest':'false'})
+          assert not release['draft'] and not release['prerelease']
+          print('Published '+release['html_url'])
+          PY
