@@ -1,27 +1,29 @@
-# FTflow â€” SV5BYP Edition
+# FTFlow - SV5BYP Edition
 
-Portable Windows x64 amateur-radio software based on MSHV, with the existing weak-signal modes, RTTY Bot and CW Bot.
+Portable Windows x64 amateur-radio software based on MSHV, continuing the full FTFlow line with weak-signal modes, RTTY Bot and CW Bot.
+
+## Download r189
+
+[FTFlow r189 - full portable package and corresponding source](https://github.com/sv5byp/FTFlow/releases/tag/r189)
+
+Extract the ENTIRE **FTflow-SV5BYP-r189-Windows-x64-portable.zip** into a new folder and run **FTFlow.exe**. Keep all included files/subfolders together. Configure your callsign, audio devices and radio/PTT connection. Do not copy just an EXE for manual installation.
 
 ## Update existing FTFlow
 
-Use **Help > Check for updates** in older FTFlow releases that support signed automatic updates, then accept the update and allow the program to restart. r182 delivers the **complete runtime**, including the CW model, automation engine and clock helper. Settings, contacts and logs are retained. Automatic checks respect the saved startup-check preference.
+Use **Help > Check for updates** in versions with the signed updater, accept and allow restart after transmission/automatic QSO has stopped. The complete verified runtime, CW model, automation engine and clock helper are included. Settings, activation records, contacts and logs are retained. Existing startup-check preferences are respected. Versions without an updater menu require the full portable download once.
 
-## Download
+## New in r189
 
-[FTflow r182 â€” complete portable package and source](https://github.com/sv5byp/FTFlow/releases/tag/r182)
+- Dense 3D waterfall with blue-green-white colours or yellow-red peaks, sharing identical motion and signal relief.
+- **Features > Waterfall > 3D appearance / colours** saves your choice. Classic r188 remains available; classic/new surface remember independent cameras. Existing 2D preference is retained.
+- Fine contours adapt to short waterfall panels; green RX/red TX markers remain.
+- Optional silent seasonal caricature, saved ON/OFF in Features. First appearance after five minutes when idle; later appearances require at least one hour, explicit PTT OFF and no active QSO/queue/TX/Tune. Radio amateur through20December2026, Santa from21December and New Year greeting from1January2027.
+- Background preference saving improves button responsiveness.
 
-For a new installation, extract **FTflow-SV5BYP-r182-Windows-x64-portable.zip** into a new folder and run **FTFlow.exe**. Keep the complete folder together. r171 and older versions without the updater menu require this full download once. Configure radio/audio devices for your computer; never copy only an EXE for a manual installation.
+Existing CW/RTTY, persistent CQ<->Call, explicit DF Apply, eight-channel CW and logging functions are retained. Optional clock correction defaults OFF for new profiles, saves your choice and runs every30minutes when enabled. Initial explicit activation may request Windows permission; no task is installed or run merely by extracting the ZIP with correction OFF.
 
-## Clock synchronization
+## Source and validation
 
-Defaults **OFF** for new profiles; the user's ON/OFF choice is saved. Enable it explicitly in Features > Clock synchronization. When enabled, synchronization runs every30minutes. First explicit activation may request Windows permission. Windows 10/11 with Windows PowerShell 5.1 is required for this optional feature.
+Corresponding source, checksums and update notes accompany each release. r189 passed617 fresh accepted rendering/menu/persistence/stream checks. These are software checks, not a live-radio decoding benchmark. The signed legacy upgrade is checked separately before publication. No proprietary third-party decoder code is included.
 
-## Features and credits
-
-F1â€“F12 editable messages, RTTY/CW automation, CW DSP and automatic/manual WPM, adjustable AFC, optional parallel multichannel reception and station selection without transmission. Access levels remain as supplied by the application. See release notes for validation scope and recovery information.
-
-MSHV by Hrisimir Hristov, LZ2HV (GNU GPL); DeepCW by VE3NEA (MIT). Original credits, licenses and map attribution are retained. No proprietary CW Skimmer decoder is included. Corresponding source and SHA256 checksums accompany the release. Older releases remain available as history.
-
-## Latest improvements
-
-Persistent CQ<->Call selection, explicit DF Apply isolated from waterfall tuning, selected CW RX search +/-200Hz with fixed TX, optional enhanced word spacing, eight CW channels, improved receive-text controls and verified clock task completion. See the release notes for scope and validation limits.
+Based on MSHV by Hrisimir Hristov, LZ2HV (GNU GPL). DeepCW model by VE3NEA (MIT). Original licenses, credits and map attribution are retained in the full distributions.
